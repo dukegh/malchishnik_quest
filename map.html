@@ -1,0 +1,26 @@
+<div ui-content-for="title">
+    <span>Карта</span>
+</div>
+
+<div class="scrollable">
+    <div class="scrollable-content">
+
+        <div id="mapWrapper">
+            <div id="mapContainer"></div>
+        </div>
+
+        <table class="coordLine"><tr>
+            <td id="mapDist">До цели: Неизвестно</td>
+            <td id="mapCoord"></td>
+        </tr></table>
+
+    </div>
+</div>
+
+<button style="display: none;" id="successButton" ng-click="$root.Ui.turnOn('modalMap')" class="btn btn-primary btn-block">
+    Успех
+</button>
+
+<div ui-content-for="modals">
+    <div ng-include="'modalMap.html'"></div>
+</div>

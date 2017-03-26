@@ -1,0 +1,107 @@
+<div ui-content-for="title">
+    <span>Квест 1</span>
+</div>
+
+<div class="scrollable ng-scope">
+    <div class="scrollable-content">
+
+        <div id="questBlock" class="list-group text-center">
+            <div class="list-group-item list-group-item-home questTitle">
+                <h1>Квест 1</h1>
+            </div>
+
+            <div class="list-group-item list-group-item-home">
+                <div>
+                    <img src="/img/tank.png">
+                </div>
+                <div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h3 class="home-heading spoiler-trigger" onclick="spoilerTrigger(this)">
+                                <img style="width: 1em" src="/img/old-scroll.png">
+                                Легенда
+                            </h3>
+                        </div>
+                        <div class="panel-collapse collapse out">
+                            <div class="panel-body">
+                                Жил-был танк. Смелый и отважный. Многие враги бежали от него, едва услышав звук его мотора.
+                                Но прошло время, врагов всех выгнали с родной земли. И нашел наш танк последнее прибежище
+                                у детей-школьников, где и поныне покоит он свою славную головушку.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="part1" class="list-group-item list-group-item-home">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="home-heading spoiler-trigger" onclick="spoilerTrigger(this)">
+                            <i class="fa fa-exclamation-circle feature-icon text-primary"></i>
+                            Задание (часть 1)
+                        </h3>
+                    </div>
+                    <div class="panel-collapse collapse out">
+                        <div class="panel-body">
+                            Найдите баншню танка, от неё и начнётся сегоднешний квест. Откройте карту, чтобы узнать,
+                            как далеко Вы от цели. На карте обозначено Ваше текущее положение, а в нижней строке
+                            - расстояине до цели. Направление до цели не указано - опреледите его сами.
+                            Цель считается достигнутой, если Вы приблизились к ней на расстояние не менее 10 метров.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="part1map" class="list-group-item list-group-item-home">
+                <a href="#/map" class="btn btn-primary btn-block">
+                    <i class="fa fa-globe"></i>
+                    Открыть карту
+                </a>
+            </div>
+
+            <div id="part2" class="list-group-item list-group-item-home hiddenQuest">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="home-heading spoiler-trigger" onclick="spoilerTrigger(this)">
+                            <i class="fa fa-exclamation-circle feature-icon text-primary"></i>
+                            Задание (часть 2)
+                        </h3>
+                    </div>
+                    <div class="panel-collapse collapse out">
+                        <div class="panel-body">
+                            Сделать фотографии с названиями компаний/брендов/фирм, расположенных вокруг школы:<br>
+                            <ul style="list-style-type: decimal;text-align: left">
+                            <li>Автомойка на северо-западе от школы.</li>
+                            <li>Салон красоты под трибунами стадиона "Оболонь"</li>
+                            <li>Тур-агенство в здании на западе от школы.</li>
+                            <li>Безалкогольный напиток над центральным входом в школу.</li>
+                            <li>Гаржный кооператив на севере от школы.</li>
+                            <li>Ветеренарная клиника на северо-востоке от школы.</li>
+                            </ul>
+                            Введите код, состоящий из первых букв взятых из названий на Ваших фотографиях.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="part2code" class="list-group-item list-group-item-home hiddenQuest">
+                <label>Введите код (6 букв)</label>
+                <input class="form-control" type="text" name="code">
+                <div id="codeMsg" class="text-danger">&nbsp;</div>
+                <button onclick="checkCode(this)" class="btn btn-primary btn-block">Проверить</button>
+            </div>
+
+            <div id="part3" class="list-group-item list-group-item-home hiddenQuest">
+                <h3 class="text-success">Поздравляем!</h3>
+                Вы прошли первый этап квеста. Награду за квест и дальнейшие инструкции Вы можете получить в отделении
+                Новой Почты № 334 на северо-западе от школы, в посылке № 5900099553356 на имя Ющенко Сергея.
+                <div>
+                    <a href="#/q2" class="btn btn-primary">Перейти к следующему квесту</a>
+                </div>
+            </div>
+
+
+        </div>
+
+    </div>
+</div>

@@ -1,0 +1,109 @@
+<div ui-content-for="title">
+    <span>Квест 3</span>
+</div>
+
+<div class="scrollable ng-scope">
+    <div class="scrollable-content">
+
+        <div id="questBlock" class="list-group text-center">
+            <div class="list-group-item list-group-item-home questTitle">
+                <h1>Квест 3</h1>
+            </div>
+
+            <div class="list-group-item list-group-item-home">
+                <div>
+                    <img src="/img/goblin.jpg">
+                </div>
+                <div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h3 class="home-heading spoiler-trigger" onclick="spoilerTrigger(this)">
+                                <img style="width: 1em" src="/img/old-scroll.png">
+                                Легенда
+                            </h3>
+                        </div>
+                        <div class="panel-collapse collapse out">
+                            <div class="panel-body">
+                                В старые времена на одной улице жилы два героя. Название улицы до сих пор напоминает
+                                нам об их героическом прошлом. Первый герой жил в начале улицы, а второй в конце.
+                                Много славных воинов приходили в их дома, чтобы испытать себя, проявив всю свою
+                                доблесть и отвагу. Но мало кому удалось прославится так же, как нашим героям.
+                                Со временем, воина стали приходить всё реже и реже, и герои решили покинуть свои дома
+                                и отправиться в новые земли в поиках приключений и новой славы. Дом второго героя,
+                                который находился в конце улицы, облюбовали два знахаря и эльф - цирюльник. А что
+                                случилось с домом первого - никто не знает. Ходят слухи, что в нём вампиры и ведьмы
+                                устроили притон с азартными играми.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="part1" class="list-group-item list-group-item-home">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="home-heading spoiler-trigger" onclick="spoilerTrigger(this)">
+                            <i class="fa fa-exclamation-circle feature-icon text-primary"></i>
+                            Задание (часть 1)
+                        </h3>
+                    </div>
+                    <div class="panel-collapse collapse out">
+                        <div class="panel-body">
+                            Разищите дом первого героя и помните, что герои небыли обычными людьми, а принадлежали
+                            к рассе гоблинов.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="part1map" class="list-group-item list-group-item-home">
+                <a href="#/map" class="btn btn-primary btn-block">
+                    <i class="fa fa-globe"></i>
+                    Открыть карту
+                </a>
+            </div>
+
+            <div id="part2" class="list-group-item list-group-item-home hiddenQuest">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="home-heading spoiler-trigger" onclick="spoilerTrigger(this)">
+                            <i class="fa fa-exclamation-circle feature-icon text-primary"></i>
+                            Задание (часть 2)
+                        </h3>
+                    </div>
+                    <div class="panel-collapse collapse out">
+                        <div class="panel-body">
+                            Старый гоблин, уезжая, защитил свой дом древними рунами, по одной с каждой стороны света.
+                            Разыскать эти руны сможет только тот, кто обладает истинным источником древнего голубого
+                            света. От всех остальных эти руны будут надёжно скрыты. Введите в следующее поле 4 символа,
+                            соответствующие 4-м рунам на доме гоблина. Порядок рун можно определить, если обходить дом
+                            по часовой стрелке, начиная с южной стороны дома.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="part2code" class="list-group-item list-group-item-home hiddenQuest">
+                <label>Руны (4 символа)</label>
+                <input class="form-control" type="text" name="code">
+                <div id="codeMsg" class="text-danger">&nbsp;</div>
+                <button onclick="checkCode(this)" class="btn btn-primary btn-block">Проверить</button>
+            </div>
+
+            <div id="part3" class="list-group-item list-group-item-home hiddenQuest">
+                <h3 class="text-success">Поздравляем!</h3>
+                Вы прошли третий этап квеста. Награду Вы можете найти в конверте между штукатуркой и стеной небольшого
+                технического здания на северо-востоке от дома гоблина.
+                <div>
+                    <a href="#/q4" class="btn btn-primary">Перейти к следующему квесту</a>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+<div ui-content-for="modals">
+    <div ng-include="'modalMap.html'"></div>
+</div>

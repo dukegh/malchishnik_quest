@@ -1,0 +1,111 @@
+<div ui-content-for="title">
+    <span>Квест 2</span>
+</div>
+
+<div class="scrollable ng-scope">
+    <div class="scrollable-content">
+
+        <div id="questBlock" class="list-group text-center">
+            <div class="list-group-item list-group-item-home questTitle">
+                <h1>Квест 2</h1>
+            </div>
+
+            <div class="list-group-item list-group-item-home">
+                <div>
+                    <img src="/img/store.png">
+                </div>
+                <div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h3 class="home-heading spoiler-trigger" onclick="spoilerTrigger(this)">
+                                <img style="width: 1em" src="/img/old-scroll.png">
+                                Легенда
+                            </h3>
+                        </div>
+                        <div class="panel-collapse collapse out">
+                            <div class="panel-body">
+                                Дети-школьники, оберегая башню их любимого танка, конечно же не забывали об учёбе.
+                                Но одной учёбой не наешся и время от времени приходилось посещать столовую.
+                                Еда в столовой хоть и была полезной, но никак не могла удовлетворить аппетит
+                                растущего организма. Да и некоторые желания, особенно старшекласников, выходили за рамки
+                                меню школьной столовой. Поэтому старшекласники часто посещали магазин, находящийся
+                                недалеко от школы.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="part1" class="list-group-item list-group-item-home">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="home-heading spoiler-trigger" onclick="spoilerTrigger(this)">
+                            <i class="fa fa-exclamation-circle feature-icon text-primary"></i>
+                            Задание (часть 1)
+                        </h3>
+                    </div>
+                    <div class="panel-collapse collapse out">
+                        <div class="panel-body">
+                            Найдите магазин недалеко от школы, столь полюбившийся старшекласникам.
+                            В этом Вам поможет карта:
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="part1map" class="list-group-item list-group-item-home">
+                <a href="#/map" class="btn btn-primary btn-block">
+                    <i class="fa fa-globe"></i>
+                    Открыть карту
+                </a>
+            </div>
+
+            <div id="part2" class="list-group-item list-group-item-home hiddenQuest">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="home-heading spoiler-trigger" onclick="spoilerTrigger(this)">
+                            <i class="fa fa-exclamation-circle feature-icon text-primary"></i>
+                            Задание (часть 2)
+                        </h3>
+                    </div>
+                    <div class="panel-collapse collapse out">
+                        <div class="panel-body">
+                            В магазине найдите и выпишете цены на следующие продукты:<br>
+                            <ul style="list-style-type: decimal;text-align: left">
+                                <li>Овощь на букву "О"</li>
+                                <li>Фрукт на букву "Н"</li>
+                                <li>Хлеб на букву "Л"</li>
+                                <li>Закваска на букву "Л"</li>
+                                <li>Мало на букву "Ф"</li>
+                                <li>Воду на букву "S"</li>
+                            </ul>
+                            Введите в следующее поле сумму цен на эти продукты:
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="part2code" class="list-group-item list-group-item-home hiddenQuest">
+                <label>Сумма цен (дробное число)</label>
+                <input class="form-control" type="text" name="code">
+                <div id="codeMsg" class="text-danger">&nbsp;</div>
+                <button onclick="checkCode(this)" class="btn btn-primary btn-block">Проверить</button>
+            </div>
+
+            <div id="part3" class="list-group-item list-group-item-home hiddenQuest">
+                <h3 class="text-success">Поздравляем!</h3>
+                Вы прошли второй этап квеста. Где можно получить награду Вы узнаете на одной из страниц книги
+                "Інформація про харчові продукті" находящейся в отделе охлаждённых кондитерских изделий.
+                <div>
+                    <a href="#/q3" class="btn btn-primary">Перейти к следующему квесту</a>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+<div ui-content-for="modals">
+    <div ng-include="'modalMap.html'"></div>
+</div>

@@ -1,0 +1,102 @@
+<div ui-content-for="title">
+    <span>Квест 9</span>
+</div>
+
+<div class="scrollable ng-scope">
+    <div class="scrollable-content">
+
+        <div id="questBlock" class="list-group text-center">
+            <div class="list-group-item list-group-item-home questTitle">
+                <h1>Квест 9</h1>
+            </div>
+
+            <div class="list-group-item list-group-item-home">
+                <div>
+                    <img src="/img/pokemons.jpg">
+                </div>
+                <div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h3 class="home-heading spoiler-trigger" onclick="spoilerTrigger(this)">
+                                <img style="width: 1em" src="/img/old-scroll.png">
+                                Легенда
+                            </h3>
+                        </div>
+                        <div class="panel-collapse collapse out">
+                            <div class="panel-body">
+                                На набережной Великой Реки стали появляться странные существа, которых местные жители
+                                называют Покемонами. Вскоре выяснилось, что эти существа поддаются приручению и из них
+                                выходят не только симпатичные питомцы, но и сильные воины. Если хорошо поискать,
+                                то можно встретить не только Покемонов, но и людей, охотящихся на них, а так же тех,
+                                кто их тренерует.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="part1" class="list-group-item list-group-item-home">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="home-heading spoiler-trigger" onclick="spoilerTrigger(this)">
+                            <i class="fa fa-exclamation-circle feature-icon text-primary"></i>
+                            Задание (часть 1)
+                        </h3>
+                    </div>
+                    <div class="panel-collapse collapse out">
+                        <div class="panel-body">
+                            Найдите на набережной места, где тренеруют Покемонов.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="part1map" class="list-group-item list-group-item-home">
+                <a href="#/map" class="btn btn-primary btn-block">
+                    <i class="fa fa-globe"></i>
+                    Открыть карту
+                </a>
+            </div>
+
+            <div id="part2" class="list-group-item list-group-item-home hiddenQuest">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="home-heading spoiler-trigger" onclick="spoilerTrigger(this)">
+                            <i class="fa fa-exclamation-circle feature-icon text-primary"></i>
+                            Задание (часть 2)
+                        </h3>
+                    </div>
+                    <div class="panel-collapse collapse out">
+                        <div class="panel-body">
+                            Помогите прославится тренерам Покемонов. Найдите их и сделайте фотографии, на которых
+                            были бы видны их достижения (Уровень тренера понемонов). И не забудте их отблагодарить,
+                            вручив памятный знак "Лучший Тренер Pokemon Go". На это задание даётся 30 минут.
+                            Приз получает тот, кто наберёт максимальный суммарный уровень тренеров покемонов на своих
+                            фотографиях.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="part2code" class="list-group-item list-group-item-home hiddenQuest">
+                <label>Введите "код"</label>
+                <input class="form-control" type="text" name="code">
+                <div id="codeMsg" class="text-danger">&nbsp;</div>
+                <button onclick="checkCode(this)" class="btn btn-primary btn-block">Проверить</button>
+            </div>
+
+            <div id="part3" class="list-group-item list-group-item-home hiddenQuest">
+                <h3 class="text-success">Поздравляем!</h3>
+                Вы прошли девятый и последний этап квеста. Если Вы собрали все части карты, можете отправляться
+                на поиски сокровища. Если какой-то из частей у Вас не хватает, получите дополнительное задание у
+                Сидоровича.
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+<div ui-content-for="modals">
+    <div ng-include="'modalMap.html'"></div>
+</div>

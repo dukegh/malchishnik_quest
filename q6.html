@@ -1,0 +1,100 @@
+<div ui-content-for="title">
+    <span>Квест 6</span>
+</div>
+
+<div class="scrollable ng-scope">
+    <div class="scrollable-content">
+
+        <div id="questBlock" class="list-group text-center">
+            <div class="list-group-item list-group-item-home questTitle">
+                <h1>Квест 6</h1>
+            </div>
+
+            <div class="list-group-item list-group-item-home">
+                <div>
+                    <img src="/img/patrik.jpg">
+                </div>
+                <div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h3 class="home-heading spoiler-trigger" onclick="spoilerTrigger(this)">
+                                <img style="width: 1em" src="/img/old-scroll.png">
+                                Легенда
+                            </h3>
+                        </div>
+                        <div class="panel-collapse collapse out">
+                            <div class="panel-body">
+                                Когда друзья встречаются не просто так, а по важному поводу, тут уже бутылочкой пива
+                                не обойтись. Да и посидеть хочется более знатно. В таких случаях надо искать заведение,
+                                где можно заказать не только свежее пиво, но и хорошую закуску к нему. А если там ещё и
+                                исполняюх хороший Рок, то цены не будет этому заведению.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="part1" class="list-group-item list-group-item-home">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="home-heading spoiler-trigger" onclick="spoilerTrigger(this)">
+                            <i class="fa fa-exclamation-circle feature-icon text-primary"></i>
+                            Задание (часть 1)
+                        </h3>
+                    </div>
+                    <div class="panel-collapse collapse out">
+                        <div class="panel-body">
+                            Найдите поблизости такое заведение, где есть свежее пиво, хорошая закуска и исполняю
+                            живой Рок.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="part1map" class="list-group-item list-group-item-home">
+                <a href="#/map" class="btn btn-primary btn-block">
+                    <i class="fa fa-globe"></i>
+                    Открыть карту
+                </a>
+            </div>
+
+            <div id="part2" class="list-group-item list-group-item-home hiddenQuest">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="home-heading spoiler-trigger" onclick="spoilerTrigger(this)">
+                            <i class="fa fa-exclamation-circle feature-icon text-primary"></i>
+                            Задание (часть 2)
+                        </h3>
+                    </div>
+                    <div class="panel-collapse collapse out">
+                        <div class="panel-body">
+                            В сегоднешнем меню у бармера есть необычный коктейль, отведав который Вы получите сокрытое
+                            знание. Называется этот коктейль "Квест" и кроме бармера о нём никто не знает.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="part2code" class="list-group-item list-group-item-home hiddenQuest">
+                <label>Код</label>
+                <input class="form-control" type="text" name="code">
+                <div id="codeMsg" class="text-danger">&nbsp;</div>
+                <button onclick="checkCode(this)" class="btn btn-primary btn-block">Проверить</button>
+            </div>
+
+            <div id="part3" class="list-group-item list-group-item-home hiddenQuest">
+                <h3 class="text-success">Поздравляем!</h3>
+                Вы прошли шестой этап квеста. Награда скрыта в записке с описанием задания, полученной от бармена.
+                <div>
+                    <a href="#/q7" class="btn btn-primary">Перейти к следующему квесту</a>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+<div ui-content-for="modals">
+    <div ng-include="'modalMap.html'"></div>
+</div>

@@ -1,0 +1,83 @@
+<div ui-content-for="title">
+    <span>Квест 8</span>
+</div>
+
+<div class="scrollable ng-scope">
+    <div class="scrollable-content">
+
+        <div id="questBlock" class="list-group text-center">
+            <div class="list-group-item list-group-item-home questTitle">
+                <h1>Квест 8</h1>
+            </div>
+
+            <div class="list-group-item list-group-item-home">
+                <div>
+                    <img src="/img/elf.png">
+                </div>
+                <div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h3 class="home-heading spoiler-trigger" onclick="spoilerTrigger(this)">
+                                <img style="width: 1em" src="/img/old-scroll.png">
+                                Легенда
+                            </h3>
+                        </div>
+                        <div class="panel-collapse collapse out">
+                            <div class="panel-body">
+                                Перворождённые эльфы, проходя нашими землями в сторону Серых Гаваней, чтобы навсегда
+                                покинуть эти земли, устроили себе привал недалеко отсюда. Во время непродолжительной
+                                стоянки, они пели песни и вспоминали былые подвиги. Листья на ближайших деревьях,
+                                впитали в себя звуки их голосов и наполнились жизненной энергией.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="part1" class="list-group-item list-group-item-home">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="home-heading spoiler-trigger" onclick="spoilerTrigger(this)">
+                            <i class="fa fa-exclamation-circle feature-icon text-primary"></i>
+                            Задание (часть 1)
+                        </h3>
+                    </div>
+                    <div class="panel-collapse collapse out">
+                        <div class="panel-body">
+                            Соберите силу из эльфийских листьев, посетив каждое из мест, где проходили Перворождённые.
+                            Эта сила понадобится Вам для последнего решающего испытания. Воспользуйтесь картой, чтобы
+                            определить, где находятся эти листья.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="part1map" class="list-group-item list-group-item-home">
+                <a href="#/map" class="btn btn-primary btn-block">
+                    <i class="fa fa-globe"></i>
+                    Открыть карту
+                </a>
+            </div>
+
+            <div id="part2" class="list-group-item list-group-item-home hiddenQuest">
+                <h3 class="text-success">Поздравляем!</h3>
+                Вы прошли восьмой этап квеста. Получите награду у Горлума, который шел по пятам за эльфами.
+                <div>
+                    <a href="#/q9" class="btn btn-primary">Перейти к следующему квесту</a>
+                </div>
+            </div>
+
+            <div id="part2code" class="list-group-item list-group-item-home hiddenQuest">
+            </div>
+
+            <div id="part3" class="list-group-item list-group-item-home hiddenQuest">
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+<div ui-content-for="modals">
+    <div ng-include="'modalMap.html'"></div>
+</div>
